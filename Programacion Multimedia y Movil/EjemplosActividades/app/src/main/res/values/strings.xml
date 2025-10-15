@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjemplosActividades</string>
+    <string name="segunda_actividad">Segunda Actividad</string>
+    <string name="esta_es_mi_segunda_actividad">Esta es mi segunda actividad</string>
+</resources>
