@@ -43,7 +43,7 @@ public class Principal {
             proceso.waitFor();
 
         } catch (IOException | InterruptedException e) {
-            System.out.println("Error al ejecuutar. " + e.getMessage());
+            System.out.println("Error al ejecutar. " + e.getMessage());
         }
     }
 }
