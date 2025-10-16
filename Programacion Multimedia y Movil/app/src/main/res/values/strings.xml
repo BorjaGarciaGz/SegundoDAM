@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Qualifiers</string>
+    <string name="label_dafault">label dafault!</string>
+    <string name="text_view_tumbao">text view tumbao</string>
+</resources>
