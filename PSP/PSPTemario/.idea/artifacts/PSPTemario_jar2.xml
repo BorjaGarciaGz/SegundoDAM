@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PSPTemario:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/PSPTemario_jar2</output-path>
+    <root id="archive" name="PSPTemario.jar">
+      <element id="module-output" name="PSPTemario" />
+    </root>
+  </artifact>
+</component>
