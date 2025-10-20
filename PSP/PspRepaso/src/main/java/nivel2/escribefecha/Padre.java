@@ -8,6 +8,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 
+
+/**
+ * EscribeFecha
+ *  App1 escribe en un fichero la fecha y hora actual.
+ *  Recibe el nombre del archivo por argumento.
+ *  App2 la llama 3 veces con pausas de 1 segundo y luego muestra el contenido del fichero
+ */
+
 public class Padre {
     public static void main(String[] args) {
         Path ruta = Paths.get("mi_archivo_con_contenido.txt");
@@ -28,8 +36,6 @@ public class Padre {
             while ((linea = br.readLine()) != null) {
                 System.out.println(linea);
             }
-
-
         } catch (IOException e) {
             System.out.println("Ocurrio un error al crear o escribir el archivo.");
         }
