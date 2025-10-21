@@ -16,29 +16,22 @@ import java.util.Scanner;
 
 public class App2 {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
 
-        System.out.println("¿Cual es el nombre del fichero original?");
-        String ficheroOriginal = entrada.nextLine();
-        System.out.println("¿Y el nombre del nuevo fichero?");
-        String ficheroNuevo = entrada.nextLine();
+        String ruta="src/Ejercicio_11/Aplicacion_01.java";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("De que fichero quieres hacer una copia?");
+        String original = sc.nextLine();
+        System.out.println("Como quieres que se llame el fichero nuevo");
+        String nuevo = sc.nextLine();
 
-        String rutaApp1 = "C:\\Users\\borja\\Documents\\ProyectosSegundoDAM\\SegundoDAM\\PSP\\PspRepaso\\src\\main\\java\\copiadordearchivo\\App1.java";
 
-        ProcessBuilder pb = new ProcessBuilder(rutaApp1, ficheroOriginal, ficheroNuevo);
-        pb.redirectErrorStream(true);
-
-        try {
+        ProcessBuilder pb = new ProcessBuilder("java",ruta,original, nuevo);
+        pb.inheritIO();
+        try{
             Process p = pb.start();
-
-            BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
-            String linea;
-            while ((linea = br.readLine()) != null) {
-                System.out.println(linea);
-            }
-            br.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+            p.waitFor();
+        }catch(IOException | InterruptedException e){
+            e.printStackTrace();
         }
     }
 }
