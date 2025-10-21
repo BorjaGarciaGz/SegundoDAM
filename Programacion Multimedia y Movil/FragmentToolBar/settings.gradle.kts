@@ -19,7 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Qualifiers"
-include(":app")
+rootProject.name = "FragmentToolBar"
 include(":app")
  
