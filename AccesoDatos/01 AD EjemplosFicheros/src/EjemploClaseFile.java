@@ -52,7 +52,7 @@ public class EjemploClaseFile {
         File carpeta = new File(ruta);
 
        ejemplo1(carpeta);
-        ejemplo2(carpeta);
+       ejemplo2(carpeta);
         sc.close();
     }
 }
