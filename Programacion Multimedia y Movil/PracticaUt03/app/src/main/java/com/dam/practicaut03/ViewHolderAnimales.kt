@@ -13,7 +13,7 @@ class ViewHolderAnimales(itemView: View) :
 
             init {
                 textViewTitulo = itemView.findViewById(R.id.filaTitulo)
-                textViewAlimentacion = itemView.findViewById(R.id.filaAlimentacion)
-                textViewReproduccion = itemView.findViewById(R.id.filaReproduccion)
+                textViewAlimentacion = itemView.findViewById(R.id.tipoAlimentacion)
+                textViewReproduccion = itemView.findViewById(R.id.tipoReproduccion)
             }
         }

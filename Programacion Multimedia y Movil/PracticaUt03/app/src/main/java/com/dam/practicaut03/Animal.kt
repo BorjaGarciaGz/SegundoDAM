@@ -1,12 +1,12 @@
 package com.dam.practicaut03
 
-class Animal(nombre: String, alimento: String, reproduccion: String ) {
+class Animal(titulo: String, alimento: String, reproduccion: String ) {
 
-    var nombre: String
+    var titulo: String
     var alimento: String
     var reproduccion: String
     init {
-        this.nombre = nombre
+        this.titulo = titulo
         this.alimento = alimento
         this.reproduccion = reproduccion
     }

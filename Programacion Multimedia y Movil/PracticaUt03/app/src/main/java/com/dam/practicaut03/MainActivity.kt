@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //bindeo
-        recyclerViewAnimal = findViewById(R.id.recyclerViewPeliculas)
+        recyclerViewAnimal = findViewById(R.id.recyclerViewAnimales)
         recyclerViewAnimal.layoutManager = LinearLayoutManager(this)
         // La línea que divide los elementos
         recyclerViewAnimal.addItemDecoration(
